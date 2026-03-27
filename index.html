@@ -4,9 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seder Feud</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Seder Feud</h1>
-  <p>Your game is starting here.</p>
+  <div class="wrap">
+    <h1>Seder Feud</h1>
+    <p>Guess the most likely Passover autocomplete answers</p>
+
+    <div class="topbar">
+      <div>Team 1 Score: <span id="score1">0</span></div>
+      <div>Team 2 Score: <span id="score2">0</span></div>
+    </div>
+
+    <div class="prompt-box" id="prompt">Why do we eat ____ at Passover</div>
+
+    <div class="answers" id="answers">
+      <div class="answer">1. __________</div>
+      <div class="answer">2. __________</div>
+      <div class="answer">3. __________</div>
+      <div class="answer">4. __________</div>
+      <div class="answer">5. __________</div>
+    </div>
+
+    <input type="text" id="guessInput" placeholder="Type a guess">
+    <button>Submit</button>
+  </div>
 </body>
 </html>
